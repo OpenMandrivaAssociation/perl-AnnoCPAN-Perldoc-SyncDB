@@ -52,8 +52,8 @@ rm -rf %buildroot
 %files
 %defattr(-,root,root)
 %doc ChangeLog LICENSE README
+%{_mandir}/man1/*
 %{_mandir}/man3/*
 %perl_vendorlib/*
 /usr/bin/syncannopod
-/usr/share/man/man1/syncannopod.1.lzma
 

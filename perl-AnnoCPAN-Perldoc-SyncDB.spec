@@ -1,15 +1,13 @@
 %define upstream_name    AnnoCPAN-Perldoc-SyncDB
-%define upstream_version 0.11
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.11
+Release:	7
 
 Summary:	Download the AnnoCPAN database
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/AnnoCPAN-Perldoc-SyncDB
-Source0:	https://cpan.metacpan.org/authors/id/C/CL/CLOTHO/AnnoCPAN-Perldoc-SyncDB-0.11.tgz-%{upstream_version}.tgz
+Source0:	https://cpan.metacpan.org/authors/id/C/CL/CLOTHO/AnnoCPAN-Perldoc-SyncDB-0.11.tgz-%{version}.tgz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -31,7 +29,7 @@ distribution, 3) Put the following in your shell configuration: 'alias
 perldoc annopod'.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -58,9 +56,7 @@ make test
 
 * Wed Feb 10 2010 Jérôme Quelin <jquelin@mandriva.org> 0.110.0-1mdv2011.0
 + Revision: 503920
-- rebuild using %%perl_convert_version
-
-* Fri May 15 2009 Jérôme Quelin <jquelin@mandriva.org> 0.11-2mdv2010.0
+- rebuild using %0.11 Fri May 15 2009 Jérôme Quelin <jquelin@mandriva.org> 0.11-2mdv2010.0
 + Revision: 376127
 - fixing man1 %%files
 - rebuild

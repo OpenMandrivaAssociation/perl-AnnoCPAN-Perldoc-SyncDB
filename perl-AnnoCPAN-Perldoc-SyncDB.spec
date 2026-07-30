@@ -2,7 +2,7 @@
 %define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	0.11
-Release:	4
+Release:	5
 
 Summary:	Download the AnnoCPAN database
 License:	GPL+ or Artistic

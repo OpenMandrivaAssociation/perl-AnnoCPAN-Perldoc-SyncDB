@@ -1,13 +1,14 @@
 %define upstream_name    AnnoCPAN-Perldoc-SyncDB
+%define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	0.11
-Release:	7
+Release:	1
 
 Summary:	Download the AnnoCPAN database
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/AnnoCPAN-Perldoc-SyncDB
-Source0:	https://cpan.metacpan.org/authors/id/C/CL/CLOTHO/AnnoCPAN-Perldoc-SyncDB-0.11.tgz-%{version}.tgz
+Source0:	https://cpan.metacpan.org/authors/id/C/CL/CLOTHO/AnnoCPAN-Perldoc-SyncDB-0.11.tgz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
